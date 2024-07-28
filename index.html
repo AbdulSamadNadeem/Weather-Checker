@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+   <div class="main">
+    <section class="navbar">
+        <input type="text" placeholder="Enter City Name" id="usercity">
+        <i class="fa-solid fa-cloud"></i>
+        <button onclick="Cityname()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </section>
+    <Section class="location">
+     <button onclick="GetLocation()"><i class="fa-solid fa-location-dot"></i></button>
+    </Section>
+    <section class="weather">
+        <img src="./images/sun.png" alt="" id="wimage">
+        <h1 id="cityname"></h1>
+        <h1 id="temp"></h1>
+    </section>
+    <section class="Date">
+        <h1 id="Date"></h1>
+        <h1 id="period"></h1>
+        <h1 id="Condition"></h1>
+    </section>
+
+    <section class="Climate">
+      <div class="humidity">
+        <img src="./images/humidity.png" alt="">
+        <h1 id="humidity"></h1>
+      </div>
+      <div class="preciption">
+        <img src="./images/rain.png" alt="">
+        <h1 id="preciption"></h1>
+      </div>
+      <div class="windSpeed">
+        <img src="./images/cloud.png" alt="">
+        <h1 id="windSpeed"></h1>
+      </div>
+      
+    </section>
+   </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
